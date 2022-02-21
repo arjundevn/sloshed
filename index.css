@@ -1,0 +1,131 @@
+.header{
+    grid-column: 1 / 8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.categories{
+    grid-column: 2 / 7;
+}
+
+.banner{    
+    grid-column: 2 / 7;
+}
+
+.sections{
+    grid-column: 2 / 7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    /* background-color: var(--primary); */
+    grid-column: 1 / 8;
+    border-top: 3px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
+    grid-template-rows: 3rem 10rem 25rem 35rem 3rem;
+    column-gap: 2rem;
+    row-gap:5rem;
+}
+
+.search-bar {
+    height: 2rem;
+}
+
+
+.navbar{
+    display: flex;
+}
+
+.cart, .wishlist{
+    margin: 0 1.2rem;
+}
+
+.btn-login{
+    background-color: var(--secondary);
+    color: var(--black)
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories img {
+    height:100%;
+    width:10rem;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+.categories img:hover {
+    box-shadow: rgba(256, 256, 256, 0.35) 10px 10px 15px;
+    margin-top: 0.5rem;
+}   
+
+.category-beer, .category-whiskey, .category-rum, .category-vodka, .category-gin {
+    position: relative;
+}
+
+.category-beer p, .category-whiskey p, .category-rum p, .category-vodka p, .category-gin p {
+    position: absolute;
+    bottom:0rem;
+    background: rgba(0, 0, 0, 0); 
+    left:1rem;
+}
+
+.badge-container {
+    font-size: x-large;
+}
+
+h2{
+    font-size: x-large;
+    color: var(--secondary);
+    background: rgba(0, 0, 0, 0); 
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url('./assets/banner-landing-page.jpeg');
+    background-size: cover;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.social-links-icons i{
+    font-size: large;
+    margin-left: 2rem;
+}
+
+html{
+	font-size: 62.5%;  /* here it is 10px */
+}
+
+@media only screen and (min-width: 800px){
+	html{
+		font-size: 75%; /* here it gets changed to 12px */
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	html{
+		font-size: 100%; 
+	}
+}
