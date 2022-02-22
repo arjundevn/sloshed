@@ -1,7 +1,7 @@
 .checkout {
     border: 2px solid var(--green);
     border-radius: 5px;
-    margin:0 auto 2rem auto;;
+    margin:0 auto 2rem auto;
     width:30rem;
     display: flex;
     flex-direction: column;
