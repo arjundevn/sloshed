@@ -22,10 +22,10 @@
     grid-template-rows: 5rem 1fr;
     column-gap: 2rem;
     row-gap:5rem;
-    margin: 2rem;
+    margin: auto;
 }
 
 .products-title {
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     justify-self: center;
 }
